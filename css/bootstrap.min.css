@@ -4504,13 +4504,15 @@ fieldset:disabled .btn {
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
 }
 .accordion-item:last-of-type .accordion-collapse {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 7px 1.25rem;
 }
 .accordion-flush .accordion-collapse {
   border-width: 0;
