@@ -14,7 +14,7 @@
       font-size: 18px
       padding: 10px 14px
   .hero
-    height: 50vh
+    height: 100vh
   .accordion
     &-button
       font-size: 18px
@@ -40,15 +40,23 @@
         width: 25px
         height: 2px
         background-color: $light
+  .service
+    &-title
+      margin: 0 0 25px 0
+    &__row
+      flex-basis: 50%
   .hero
     &-title
       font-size: 30px
       line-height: 40px
       text-align: end
       max-width: 325px
+      margin: 0 0 53px 0
     &-subtitle
       max-width: 335px
       text-align: end
+  .accordion
+    margin-bottom: 30px
 @media ( max-width: 768px )
   .container
     max-width: 580px
@@ -61,11 +69,24 @@
     &-subtitle
       font-size: 30px
       line-height: 29px
+  .service
+    &-title
+      font-size: 35px
+    &__row
+      flex-basis: 100%
 @media  ( max-width: 576px )
   .hero
     &-subtitle
       font-size: 28px
       max-width: 255px
+  .service
+    padding-top: 20px
+    &-title
+      font-size: 27px
+      line-height: 1.25
+      margin-bottom: 20px
+  .accordion
+    margin-bottom: 20px
 @media ( max-width: 320px )
   .header
     &__logo
