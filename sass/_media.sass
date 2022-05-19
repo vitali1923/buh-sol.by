@@ -42,6 +42,14 @@
       max-width: 625px
     &-wrapper
       align-items: self-end
+  .contact
+    &__item
+      &:nth-child(2)
+        margin-left: 15px
+    &-profile
+      max-width: 496px
+    &-form
+      max-width: 440px
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -92,6 +100,20 @@
     &-wrapper
       flex-direction: column
       align-items: center
+  .contact
+    &-details
+      flex-basis: 100%
+      margin-bottom: 40px
+    &-profile
+      width: 100%
+      align-items: center
+    &-links
+      align-items: center
+      justify-content: center
+      margin-bottom: calc( 30px - 5px)
+    &-form
+      flex-basis: 100%
+      max-width: 100%
 @media ( max-width: 768px )
   .container
     max-width: 580px
@@ -120,6 +142,11 @@
       margin-bottom: 10px
     &-item
       margin-bottom: 10px
+  .contact
+    &__link
+      &-image
+        width: 50px
+        height: 50px
 @media  ( max-width: 576px )
   .hero
     &-subtitle
@@ -144,6 +171,39 @@
     &-image
       max-width: 210px
       min-height: 346px
+  .contact
+    &__avatar
+      width: 200px
+      height: 200px
+    &__name
+      font-size: 20px
+    &-links
+      flex-direction: column
+    &__degree
+      font-size: 18px
+    &__item
+      font-size: 18px
+      &-image
+        display: none
+    &__phone,
+    &__email
+      font-size: 18px
+    &__link
+      &-image
+        width: 40px
+        height: 40px
+    &-form
+      padding: 25px 25px
+      &__title
+        font-size: 18px
+        margin-bottom: 20px
+    &__form
+      &-group
+        margin-bottom: 20px
+    .input
+      height: 50px
+    .message
+      padding: 15px 31px
 @media ( max-width: 320px )
   .header
     &__logo
