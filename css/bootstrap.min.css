@@ -316,6 +316,7 @@ tr {
 }
 label {
   display: inline-block;
+  color: #ffff
 }
 button {
   border-radius: 0;
