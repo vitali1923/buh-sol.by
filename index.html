@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--mobile_fixed">
       <div class="container">
         <div class="header-wrapper">
           <a href="#" class="header__logo"> Мельник Ирина </a>
@@ -40,8 +40,10 @@
               </li>
             </ul>
           </nav>
-          <!-- /.nav -->
-          <button data-toggle="modal" class="button header__button">Заказать звонок</button>
+          <!-- /.header-nav -->
+          <button data-toggle="modal" class="button header__button">
+            Заказать звонок
+          </button>
           <button class="menu-button navbar-top">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -53,6 +55,38 @@
       <!-- /.container -->
     </header>
     <!-- /.header -->
+
+    <div class="mobile">
+      <div class="container">
+        <div class="mobile-wrapper">
+          <nav class="mobile-nav">
+            <ul class="mobile-menu">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Бухгалтерские услуги</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Стоимость</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Обо мне</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Отзывы</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.mobile-nav -->
+          <button data-toggle="modal" class="button mobile__button">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.mobile -->
 
     <section class="hero">
       <div class="container">
@@ -531,7 +565,7 @@
                 <input
                   type="tel"
                   class="input contact__input"
-                  placeholder="Номер телефона *"
+                  placeholder="+375(__)___ - __ - __ *"
                   name="phone"
                   required
                   minlength="13"
@@ -567,9 +601,9 @@
     <!-- /.footer -->
 
     <div class="modal">
-      <div class="modal__overlay "></div>
+      <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog ">
+      <div class="modal__dialog">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
@@ -591,7 +625,7 @@
               <input
                 type="tel"
                 class="input modal__input"
-                placeholder="Номер телефона *"
+                placeholder="+375(__)___-__-__  *"
                 name="phone"
                 required
                 minlength="13"
@@ -614,6 +648,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

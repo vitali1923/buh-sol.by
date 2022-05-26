@@ -1,5 +1,12 @@
 $(document).ready(function (){
 
+  // мобильное меню
+  var menuButton = $(".menu-button");
+  menuButton.on('click', function() {
+    $('.mobile').toggleClass('mobile--visible');
+    // $('.mobile-menu__nav').toggleClass('mobile-menu__nav--visible');
+  });
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on('click', openModal);
@@ -36,4 +43,6 @@ $(document).ready(function (){
   },
   });
   });
+
+  $('input[type="tel"]').mask('+375(00)000-00-00');
 });
