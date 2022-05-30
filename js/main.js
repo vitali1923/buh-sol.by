@@ -1,4 +1,15 @@
 $(document).ready(function (){
+// Слайдер блока с отзывами
+const mySwiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
   // мобильное меню
   var menuButton = $(".menu-button");
@@ -45,4 +56,5 @@ $(document).ready(function (){
   });
 
   $('input[type="tel"]').mask('+375(00)000-00-00');
+  AOS.init();
 });
