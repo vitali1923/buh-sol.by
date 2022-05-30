@@ -38,6 +38,29 @@ const mySwiper = new Swiper('.swiper', {
     modalDialog.removeClass("modal__dialog--visible");
   };
 
+
+  // Форма с отзывами
+  var modalReviewsButton = $("[data-toggle=reviews]");
+  var closeReviewsButton = $(".reviews__close");
+  modalReviewsButton.on('click', openReviews);
+  closeReviewsButton.on('click', closeReviews);
+
+  function openReviews() {
+    var reviewsOverlay = $(".reviews__overlay");
+    var reviewsDialog = $(".reviews__dialog");
+    reviewsOverlay.addClass("reviews__overlay--visible");
+    reviewsDialog.addClass("reviews__dialog--visible");
+  };
+
+  function closeReviews(event) {
+    event.preventDefault();
+    var reviewsOverlay = $(".reviews__overlay");
+    var reviewsDialog = $(".reviews__dialog");
+    reviewsOverlay.removeClass("reviews__overlay--visible");
+    reviewsDialog.removeClass("reviews__dialog--visible");
+  };
+
+
   // Валидация форм
   $(".form").each(function(){
     $(this).validate({
@@ -50,6 +73,9 @@ const mySwiper = new Swiper('.swiper', {
     phone: {
       required: "Введите номер телефона",
       minlength: "Не корректный номер телефона"
+    },
+    email: {
+      email: "Ваш адрес электронной почты должен быть в формате имя@домен.com"
     },
   },
   });

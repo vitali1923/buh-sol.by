@@ -558,12 +558,55 @@
             <div class="swiper-button-prev reviews-slider__button--prev"></div>
           </div>
           <!-- /. reviews-slider -->
-          <button data-toggle="modal" class="button reviews__button">Оставить отзыв</button>
+          <button data-toggle="reviews" class="button reviews__button">Оставить отзыв</button>
         </div>
         <!-- /.slider -->
       </div>
     </section>
     <!-- /.reviews -->
+
+    <div class="reviews-modal">
+      <div class="reviews__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="reviews__dialog">
+        <a href="#" class="reviews__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+
+        <div class="reviews-form">
+          <h3 class="reviews-form__title">Ваш отзыв</h3>
+          <form action="#" class="form reviews__form">
+            <div class="reviews__form-group">
+              <input
+                type="text"
+                class="input reviews__input"
+                placeholder="Ваше имя *"
+                name="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="reviews__form-group">
+              <input
+                type="email"
+                class="input reviews__input"
+                placeholder="e-mail"
+                name="email"
+              />
+            </div>
+            <textarea
+              class="message reviews__message"
+              name="message"
+              placeholder="Сообщение"
+            ></textarea>
+            <button class="button reviews__button">Отправить</button>
+          </form>
+        </div>
+        <!-- /.reviews-form -->
+      </div>
+      <!-- /.reviews__dialog -->
+    </div>
+    <!-- /.reviews-modal -->
 
     <section class="contact" id="contact">
       <div class="container">
