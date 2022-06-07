@@ -577,7 +577,7 @@
 
         <div class="reviews-form">
           <h3 class="reviews-form__title">Ваш отзыв</h3>
-          <form action="#" class="form reviews__form">
+          <form action="reviews.php" class="form reviews__form" method="POST">
             <div class="reviews__form-group">
               <input
                 type="text"
@@ -598,7 +598,7 @@
             </div>
             <textarea
               class="message reviews__message"
-              name="message"
+              name="text"
               placeholder="Сообщение"
             ></textarea>
             <button class="button reviews__button">Отправить</button>
@@ -680,7 +680,7 @@
           <!-- /.contact-details -->
           <div class="contact-form">
             <h3 class="contact-form__title">Получить консультацию</h3>
-            <form action="#" class="form contact__form">
+            <form action="send.php" class="form contact__form" method="POST">
               <div class="contact__form-group">
                 <input
                   type="text"
@@ -689,6 +689,7 @@
                   name="name"
                   required
                   minlength="2"
+                  pattern="[A-Za-zА-Яа-яЁё]"
                 />
               </div>
               <div class="contact__form-group">
@@ -704,10 +705,12 @@
               </div>
               <textarea
                 class="message contact__message"
-                name="message"
+                name="text"
                 placeholder="Сообщение"
               ></textarea>
-              <button class="button contact__button">Отправить</button>
+              <button type="submit" class="button contact__button">
+                Отправить
+              </button>
             </form>
           </div>
           <!-- /.contact-form -->
@@ -740,7 +743,7 @@
 
         <div class="modal-form">
           <h3 class="modal-form__title">Получить консультацию</h3>
-          <form action="#" class="form modal__form">
+          <form action="send.php" class="form modal__form" method="POST">
             <div class="modal__form-group">
               <input
                 type="text"
@@ -749,6 +752,8 @@
                 name="name"
                 required
                 minlength="2"
+                autofocus
+                tabindex="1"
               />
             </div>
             <div class="modal__form-group">
@@ -760,12 +765,14 @@
                 required
                 minlength="13"
                 maxlength="13"
+                tabindex="2"
               />
             </div>
             <textarea
               class="message modal__message"
-              name="message"
+              name="text"
               placeholder="Сообщение"
+              tabindex="3"
             ></textarea>
             <button class="button modal__button">Отправить</button>
           </form>
