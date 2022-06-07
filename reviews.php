@@ -38,6 +38,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('vitalimelnik@yandex.ru');  
+    $mail->addAddress('kulik_irina@bk.ru');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
